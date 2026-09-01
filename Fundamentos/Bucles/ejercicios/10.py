@@ -1,7 +1,6 @@
 acumulador_1 = 0
 acumulador_2 = 0
 
-
 for i in range(101):
     if i % 2 == 0:
         acumulador_1 = acumulador_1 + i

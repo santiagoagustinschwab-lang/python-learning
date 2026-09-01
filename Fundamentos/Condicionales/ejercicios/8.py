@@ -10,3 +10,4 @@ else:
     email = input("Introduce tu mail")
     persona["Mail"] = email
     print(persona)
+
