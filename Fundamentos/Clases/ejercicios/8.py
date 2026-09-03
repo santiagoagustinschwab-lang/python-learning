@@ -1,3 +1,4 @@
+#8
 class Libro:
     def __init__(self,titulo, autor, leido = False):
         self.titulo = titulo
@@ -10,5 +11,4 @@ class Libro:
 mi_libro = Libro("libro x", "autor x")
 
 mi_libro.marcar_leido()
-
 print(mi_libro.leido)

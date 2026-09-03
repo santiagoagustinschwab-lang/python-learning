@@ -1,3 +1,4 @@
+#10
 class Contacto:
     def __init__(self, nombre, telefono, ciudad):
         self.nombre = nombre
