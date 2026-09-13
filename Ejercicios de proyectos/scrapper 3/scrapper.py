@@ -17,10 +17,10 @@ for i in num_of_pages:
     html = BeautifulSoup(web.text, "html.parser")
 
     # Prices are inside <p class="price_color"> tags
-    prices = html.findAll("p", class_="price_color")
+    prices = html.find_all("p", class_="price_color")
 
     # Titles are inside <a title="..."> tags (using the title attribute avoids truncated titles)
-    titles = html.findAll("a", title=True)
+    titles = html.find_all("a", title=True)
 
     for title in titles:
         title_list.append(title["title"])

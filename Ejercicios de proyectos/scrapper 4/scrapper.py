@@ -15,8 +15,8 @@ for i in num_pages:
     web = requests.get(f"https://books.toscrape.com/catalogue/page-{i}.html")
     html = BeautifulSoup(web.text, "html.parser")
 
-    titles = html.findAll("a", title = True)
-    prices = html.findAll("p", class_ = "price_color")
+    titles = html.find_all("a", title = True)
+    prices = html.find_all("p", class_ = "price_color")
 
     for title in titles:
         titles_list.append(title["title"])
@@ -28,7 +28,7 @@ for title, price in zip(titles_list, price_list):
     book = {"title":title, "price":price}
     books.append(book)
 
-sheet.append(["TILES", "PRICES"])
+sheet.append(["TITLES", "PRICES"])
 
 for book in books:
     sheet.append([book["title"], book["price"]])

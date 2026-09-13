@@ -7,8 +7,8 @@ web.encoding = "utf-8"
 
 html = BeautifulSoup(web.text, "html.parser")
 
-phrases = html.findAll("span", class_ = "text")
-authors = html.findAll("small", class_ = "author")
+phrases = html.find_all("span", class_ = "text")
+authors = html.find_all("small", class_ = "author")
 
 list_of_phrases = []
 list_of_authors = []

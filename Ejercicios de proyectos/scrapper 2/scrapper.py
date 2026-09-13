@@ -7,8 +7,8 @@ web.encoding = "utf-8"
 
 html = BeautifulSoup(web.text, "html.parser")
 
-products = html.findAll("a", itemprop = "name")
-prices = html.findAll("span", itemprop = "price")
+products = html.find_all("a", itemprop = "name")
+prices = html.find_all("span", itemprop = "price")
 
 products_list = []
 prices_list = []
