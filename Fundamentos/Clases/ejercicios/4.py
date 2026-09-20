@@ -5,5 +5,9 @@ class Perro:
         self.raza = raza
         self.rope = nombre, raza
 
-mi_perro = Perro("lola", "schnawser")
+mi_perro = Perro("lola")
+print(mi_perro.rope)
+
+
+mi_perro = Perro("lola", "caniche")
 print(mi_perro.rope)

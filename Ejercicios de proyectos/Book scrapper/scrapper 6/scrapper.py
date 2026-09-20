@@ -14,7 +14,7 @@ for i in num_pages:
     try:
         web = requests.get(f"https://books.toscrape.com/catalogue/page-{i}.html")
         if web.status_code == 404:
-            raise ValueError (f"ERROR {web.status_code} in {i}")
+            raise ValueError (f"page {i} doesnt exist")
 
         html = BeautifulSoup(web.text, "html.parser")
 

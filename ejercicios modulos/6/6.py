@@ -1,6 +1,6 @@
 import random
 
-numero = random.randint(1, 10)
+numero = random.randint(0, 10)
 
 try:
     print(numero / 100)

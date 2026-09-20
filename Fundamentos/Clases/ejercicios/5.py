@@ -10,3 +10,4 @@ class Persona:
 
 mi_persona = Persona("Santiago", 17)
 print(mi_persona.cumplir_años(1))
+print(mi_persona.cumplir_años(2))

@@ -11,4 +11,4 @@ numeros = [10, 20, 30]
 try:
     recibir_lista(numeros, 2)
 except IndexError:
-    print("el indice no existe en la lista")
+    None
